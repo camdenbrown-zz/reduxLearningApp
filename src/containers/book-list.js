@@ -26,7 +26,7 @@ class BookList extends Component
 
 const mapStateToProps = ({books}) => ({ books });
 const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ selectBook: selectBook }, dispatch);
+  return bindActionCreators({ selectBook }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
